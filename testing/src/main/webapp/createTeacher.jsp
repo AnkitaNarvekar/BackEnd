@@ -8,6 +8,12 @@
 <title>Add New Teacher</title>
 </head>
 <body>
+<%
+	if(session.getAttribute("username")==null)
+	{
+		response.sendRedirect("index.jsp");
+	}
+%>
 	<center>
 	<div style="position:absolute;top:0;bottom:10px;right:10px; z-index:999" >
     <table>
